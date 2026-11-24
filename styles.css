@@ -1,10 +1,4 @@
-/* =========================================
-   Schreinerei Meier – gemeinsames Stylesheet
-   Eingebunden in jeder Seite mit:
-   <link rel="stylesheet" href="./styles.css">
-   ========================================= */
 
-/* --- Element-Selektoren: gelten für ALLE Elemente dieses Typs --- */
 body {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
@@ -26,13 +20,12 @@ hr {
   border-top: 2px solid #d9c4a8;
 }
 
-/* --- Seitenaufbau: header, nav, main, footer --- */
+
 header {
   background-color: #6b3e1f;
   padding: 16px 24px;
 }
 
-/* Kombinierter Selektor: nur .logo innerhalb von header */
 header .logo {
   margin: 0 0 8px;
   font-size: 1.6em;
@@ -50,7 +43,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Attribut-Selektor: der Link zur aktuellen Seite */
+
 nav a[aria-current="page"] {
   font-weight: bold;
   border-bottom: 2px solid #faf6f0;
@@ -85,7 +78,7 @@ th {
   background-color: #ead9c2;
 }
 
-/* --- Bilder / figure --- */
+
 figure {
   margin: 0;
 }
@@ -96,7 +89,7 @@ figcaption {
   color: #6b5a48;
 }
 
-/* Klassen-Selektor: .galerie = Gitter für die Bilder */
+
 .galerie {
   display: flex;
   flex-wrap: wrap;
