@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header id="top">
+      <p class="logo">Schreinerei Meier</p>
+      <nav>
+        <a href="index.html">Startseite</a>
+        <a href="preise.html">Preise</a>
+        <a href="holzarten.html">Holzarten</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="kontakt.html" aria-current="page">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Kontakt</h1>
+
+      <!-- Sprunglinks innerhalb der Seite -->
+      <p>
+        <a href="#adresse">Adresse</a> |
+        <a href="#links">Nützliche Links</a>
+      </p>
+
+      <section>
+        <h2 id="adresse">Adresse</h2>
+        <address>
+          Schreinerei Meier<br>
+          Holzweg 15<br>
+          9000 St. Gallen<br>
+          E-Mail: <a href="mailto:info@schreinerei-meier.example">info@schreinerei-meier.example</a><br>
+          Telefon: <a href="tel:+41710000000">071 000 00 00</a>
+        </address>
+      </section>
+
+      <section>
+        <h2 id="links">Nützliche Links</h2>
+        <ul>
+          <!-- absoluter Link, öffnet in neuem Tab -->
+          <li><a href="https://www.lignum.ch" target="_blank" title="Dachorganisation der Schweizer Holzwirtschaft">Lignum – Holzwirtschaft Schweiz</a></li>
+          <!-- Link auf eine Stelle einer anderen Seite -->
+          <li><a href="gallery.html#regale">Unsere Regale in der Galerie</a></li>
+          <!-- Download-Link: download ist ein Attribut -->
+          <li><a href="./img/TischEiche.png" download>Bild Esstisch herunterladen</a></li>
+        </ul>
+      </section>
+
+      <!-- Bild als Link -->
+      <p>
+        <a href="gallery.html">
+          <img src="./img/TischEiche.png" alt="Zur Möbelgalerie" width="120">
+        </a>
+      </p>
+
+      <p><a href="#top">Nach oben</a></p>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Schreinerei Meier</p>
+    </footer>
+  </body>
+</html>

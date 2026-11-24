@@ -1,0 +1,113 @@
+/* =========================================
+   Schreinerei Meier – gemeinsames Stylesheet
+   Eingebunden in jeder Seite mit:
+   <link rel="stylesheet" href="./styles.css">
+   ========================================= */
+
+/* --- Element-Selektoren: gelten für ALLE Elemente dieses Typs --- */
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #3b2a1a;              /* dunkles Braun */
+  background-color: #faf6f0;   /* helles Holz-Beige */
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: #6b3e1f;
+}
+
+a {
+  color: #8b4513;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #d9c4a8;
+}
+
+/* --- Seitenaufbau: header, nav, main, footer --- */
+header {
+  background-color: #6b3e1f;
+  padding: 16px 24px;
+}
+
+/* Kombinierter Selektor: nur .logo innerhalb von header */
+header .logo {
+  margin: 0 0 8px;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #faf6f0;
+}
+
+nav a {
+  color: #faf6f0;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Attribut-Selektor: der Link zur aktuellen Seite */
+nav a[aria-current="page"] {
+  font-weight: bold;
+  border-bottom: 2px solid #faf6f0;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+footer {
+  background-color: #6b3e1f;
+  color: #faf6f0;
+  text-align: center;
+  padding: 12px;
+}
+
+/* --- Tabellen --- */
+table {
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+th, td {
+  border: 1px solid #d9c4a8;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #ead9c2;
+}
+
+/* --- Bilder / figure --- */
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #6b5a48;
+}
+
+/* Klassen-Selektor: .galerie = Gitter für die Bilder */
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* --- Weitere Text-Tags --- */
+mark {
+  background-color: #f5d76e;
+}
+
+address {
+  font-style: normal;          /* Standard wäre kursiv */
+}
